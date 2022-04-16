@@ -1,0 +1,190 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #888;
+}
+
+/* 
+---------------------------------------------
+首頁
+--------------------------------------------- 
+*/
+.welcome-area {
+  width: 100%;
+  height: 100vh;
+  min-height: 200px;
+  background-image: url(../images/right-bg-decor.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-top: -30px;
+}
+
+.welcome-area .header-text .left-text {
+  position: relative;
+  align-self: center;
+  margin-top: 35%;
+  transform: perspective(1px) translateY(-30%) !important;
+}
+
+.welcome-area .header-text h1 {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 80px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #191a20;
+}
+
+.welcome-area .header-text h1 em {
+  font-style: normal;
+  color: #fba70b;
+}
+
+
+@media (max-width: 1420px) {
+  .welcome-area .header-text {
+    width: 70%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .welcome-area .header-text .left-text {
+    margin-top: 50%;
+  }
+  .welcome-area .header-text {
+    width: 50%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .welcome-area {
+    height: auto;
+  }
+  .welcome-area .header-text {       
+    width: 92%;
+    padding-top: 650px;
+  }
+  .welcome-area .header-text .left-text {
+    margin-top: 5%;
+    transform: none !important;
+  }
+}
+@media (max-width: 810px) {
+  .welcome-area {
+    background-size: contain;
+  }
+
+  .welcome-area .header-text {
+    padding-top: 100%;
+    margin-left: 0;
+  }
+    
+  .container-fluid .col-md-12 {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .features-item {
+    margin-bottom: 45px;
+  }
+}
+
+.features-item {
+  margin-top: -6%;
+  border-radius: 5px;
+  padding: 30px 30px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+.left-image-decor {
+  background-image: url(../images/left-bg-decor.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  height: 110%;
+  margin-top: -1000px;
+}
+
